@@ -8,11 +8,14 @@ public class JarrasAI extends JFrame{
 
 	public JarrasAI() {
 
-		setSize(450, 450);
+		setSize(500, 350);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
 		
-		//add(new GamePanel());
+		add(new GamePanel());
+		add(new ButtonPanel());
+
 		setVisible(true);
 	}
 
@@ -20,5 +23,4 @@ public class JarrasAI extends JFrame{
 		new JarrasAI();
 
 	}
-
 }
