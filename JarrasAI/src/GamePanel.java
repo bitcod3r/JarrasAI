@@ -25,5 +25,18 @@ public class GamePanel extends JPanel {
 		g.drawImage(imagenB, 176, 0, null);
 	}
 	
+	public void updateA(Graphics g, String img) {
+		// Poner las jarras vacias
+		Image imagenA = new ImageIcon(img + ".jpg").getImage();
+		g.drawImage(imagenA, 3, 25, null); // coordenadas desplazadas por bordes de app
+
+	}
+	
+	public void updateB(Graphics g, String img) {
+		// Poner las jarras vacias
+		Image imagenA = new ImageIcon(img + ".jpg").getImage();
+		g.drawImage(imagenA, 179, 25, null); // coordenadas desplazadas por bordes de app
+
+	}
 
 }
