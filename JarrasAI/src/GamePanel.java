@@ -39,7 +39,7 @@ public class GamePanel extends JPanel {
 	}
 	
 	public void llenarA(){
-		//llenar A
+		//llenar A 
 		cantidad_a = capacidad_a;
 		nivelagua_a = cantidad_a;		
 	}
