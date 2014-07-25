@@ -1,22 +1,22 @@
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-/**
- * @author bitcod3r
- *
- */
-public class JarrasAI extends JFrame{
+@SuppressWarnings("unused")
+public class JarrasAI extends JFrame {
 
 	public JarrasAI() {
 
 		setSize(500, 350);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		getContentPane().setLayout(null);
+		setLayout(null);
 		
-		add(new GamePanel());
 		add(new ButtonPanel());
-
+		add(new GamePanel());
 		setVisible(true);
+		
+		
+		
 	}
 
 	public static void main(String[] args) {

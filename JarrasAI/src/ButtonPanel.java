@@ -1,3 +1,7 @@
+import java.awt.Graphics;
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JSeparator;
@@ -6,7 +10,7 @@ import javax.swing.JSeparator;
 public class ButtonPanel  extends JPanel {
 
 	public ButtonPanel() {
-		setBounds(367, 0, 127, 311);
+		setBounds(350, 0, 150, 322);
 		setLayout(null);
 		
 		JButton btnLlenara = new JButton("LlenarA");
@@ -37,6 +41,13 @@ public class ButtonPanel  extends JPanel {
 		add(separator);
 		add(btnPasarAB);
 		add(btnPasarAA);
+	}
+	
+	public void paintComponent(Graphics g) {
+
+		Image imagen = new ImageIcon("bgmenu.jpg").getImage();
+		g.drawImage(imagen, 0, 0, null);
+		
 	}
 
 }
