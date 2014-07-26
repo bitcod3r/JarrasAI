@@ -18,10 +18,10 @@ public class GamePanel extends JPanel {
 		g.drawImage(imagen, 0, 0, null);
 
 		// Poner las jarras vacias
-		Image imagenA = new ImageIcon("A.jpg").getImage();
+		Image imagenA = new ImageIcon("A0.jpg").getImage();
 		g.drawImage(imagenA, 0, 0, null);
 		
-		Image imagenB = new ImageIcon("B.jpg").getImage();
+		Image imagenB = new ImageIcon("B0.jpg").getImage();
 		g.drawImage(imagenB, 176, 0, null);
 	}
 	
